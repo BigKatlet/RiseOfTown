@@ -9,9 +9,9 @@ public class LifeColonistScript : MonoBehaviour
     public GameObject COLONIST_LIFE_POINTS_SLEEP;
     public GameObject COLONIST_LIFE_POINTS_RELAX;
 
-    public GameObject COLONIST_LIFE_IMAGE;
+    public bool COLONIST_LIFE_WORK_IS_EMPLOYED;
 
-    
+    public GameObject COLONIST_LIFE_IMAGE;
     
     private bool isWorkDone;
 
@@ -36,7 +36,7 @@ public class LifeColonistScript : MonoBehaviour
             }
             else
             {
-                //Work done, nuh the bebra.
+                //Work done
             }
             isWorkDone = true;
         }
@@ -66,36 +66,41 @@ public class LifeColonistScript : MonoBehaviour
 
     private void Update()
     {
-        //0                                    //50
-        if (WorldTime.TIME_world > eventTimes[0] && WorldTime.TIME_world < eventTimes[1])
+        //Checking time
+        #region
+        if (COLONIST_LIFE_WORK_IS_EMPLOYED == true)
         {
-            //SLEEP
-
-            //DEBUG
-            //Debug.Log("[COLONIST WORK]:Sleep time");
-
-            GoToSleep();
-            
+            //0 //50
+            if (WorldTime.TIME_world > eventTimes[0] && WorldTime.TIME_world < eventTimes[1])
+            {
+                //SLEEP
+                GoToSleep();
+            }
+            //50 //100
+            if (WorldTime.TIME_world > eventTimes[1] && WorldTime.TIME_world < eventTimes[2])
+            {
+                //WORK
+                GoToWork();
+            }
+            //100 //120           
+            if (WorldTime.TIME_world > eventTimes[2] && WorldTime.TIME_world < 120)
+            {
+                //RELAX
+                GoToRelax();
+            }
         }
-        //50                                    //100
-        if (WorldTime.TIME_world > eventTimes[1] && WorldTime.TIME_world < eventTimes[2])
+        #endregion
+        //Unemployed?
+        if(COLONIST_LIFE_POINTS_WORK == null | COLONIST_LIFE_POINTS_RELAX == null | COLONIST_LIFE_POINTS_SLEEP == null)
         {
-            //WORK
-
-            //DEBUG
-            //Debug.Log("[COLONIST WORK]:Work time");
-
-            GoToWork();
+            //Unemployed
+            COLONIST_LIFE_WORK_IS_EMPLOYED = false;
+            Debug.Log("[WORK]: Unemployed colonist!");
         }
-        //100                          //120           
-        if (WorldTime.TIME_world > eventTimes[2] && WorldTime.TIME_world < 120)
+        else
         {
-            //RELAX
-
-            //DEBUG
-            //Debug.Log("[COLONIST WORK]:Relax time");
-
-            GoToRelax();
+            //Employed
+            COLONIST_LIFE_WORK_IS_EMPLOYED = true;
         }
     }
 }

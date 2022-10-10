@@ -265,7 +265,7 @@ Transform:
   - {fileID: 1840683361}
   - {fileID: 1046316484}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &243575691
 GameObject:
@@ -879,7 +879,7 @@ PrefabInstance:
     - target: {fileID: 7353359586427121442, guid: b55ed38c5ac1d704883e532414046e8d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7353359586427121442, guid: b55ed38c5ac1d704883e532414046e8d,
         type: 3}
@@ -946,6 +946,27 @@ PrefabInstance:
       propertyPath: COLONIST_LIFE_POINTS_SLEEP
       value: 
       objectReference: {fileID: 1840683360}
+    - target: {fileID: 7353359588132684395, guid: b55ed38c5ac1d704883e532414046e8d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6ba546c9dc77c9a4d897027e25888a41,
+        type: 3}
+    - target: {fileID: 7353359588132684396, guid: b55ed38c5ac1d704883e532414046e8d,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.475
+      objectReference: {fileID: 0}
+    - target: {fileID: 7353359588132684396, guid: b55ed38c5ac1d704883e532414046e8d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.475
+      objectReference: {fileID: 0}
+    - target: {fileID: 7353359588132684396, guid: b55ed38c5ac1d704883e532414046e8d,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.475
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b55ed38c5ac1d704883e532414046e8d, type: 3}
 --- !u!1001 &994093379
@@ -963,7 +984,7 @@ PrefabInstance:
     - target: {fileID: 7353359586427121442, guid: b55ed38c5ac1d704883e532414046e8d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7353359586427121442, guid: b55ed38c5ac1d704883e532414046e8d,
         type: 3}
@@ -1030,6 +1051,27 @@ PrefabInstance:
       propertyPath: COLONIST_LIFE_POINTS_SLEEP
       value: 
       objectReference: {fileID: 1573723641}
+    - target: {fileID: 7353359588132684395, guid: b55ed38c5ac1d704883e532414046e8d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6ba546c9dc77c9a4d897027e25888a41,
+        type: 3}
+    - target: {fileID: 7353359588132684396, guid: b55ed38c5ac1d704883e532414046e8d,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.475
+      objectReference: {fileID: 0}
+    - target: {fileID: 7353359588132684396, guid: b55ed38c5ac1d704883e532414046e8d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.475
+      objectReference: {fileID: 0}
+    - target: {fileID: 7353359588132684396, guid: b55ed38c5ac1d704883e532414046e8d,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.475
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b55ed38c5ac1d704883e532414046e8d, type: 3}
 --- !u!1 &1002932814
@@ -1137,7 +1179,7 @@ Transform:
   m_GameObject: {fileID: 1046316483}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -5, y: 3, z: 0}
-  m_LocalScale: {x: 0.3125, y: 0.3125, z: 0.3125}
+  m_LocalScale: {x: 0.625, y: 0.625, z: 0.625}
   m_Children: []
   m_Father: {fileID: 208308611}
   m_RootOrder: 2
@@ -1195,7 +1237,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9860c1d1659dbab408d3fbd8c390afd0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eabbf48ae03cc204dabd136fa56446db, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1237,7 +1279,7 @@ Transform:
   - {fileID: 1378523135}
   - {fileID: 1160605749}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1160605748
 GameObject:
@@ -1837,7 +1879,7 @@ Transform:
   - {fileID: 1573723642}
   - {fileID: 1190942829}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &7353359586923240752
 PrefabInstance:
@@ -1854,7 +1896,7 @@ PrefabInstance:
     - target: {fileID: 7353359586427121442, guid: b55ed38c5ac1d704883e532414046e8d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7353359586427121442, guid: b55ed38c5ac1d704883e532414046e8d,
         type: 3}
@@ -1921,5 +1963,26 @@ PrefabInstance:
       propertyPath: COLONIST_LIFE_POINTS_SLEEP
       value: 
       objectReference: {fileID: 1378523134}
+    - target: {fileID: 7353359588132684395, guid: b55ed38c5ac1d704883e532414046e8d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6ba546c9dc77c9a4d897027e25888a41,
+        type: 3}
+    - target: {fileID: 7353359588132684396, guid: b55ed38c5ac1d704883e532414046e8d,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.475
+      objectReference: {fileID: 0}
+    - target: {fileID: 7353359588132684396, guid: b55ed38c5ac1d704883e532414046e8d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.475
+      objectReference: {fileID: 0}
+    - target: {fileID: 7353359588132684396, guid: b55ed38c5ac1d704883e532414046e8d,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.475
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b55ed38c5ac1d704883e532414046e8d, type: 3}
